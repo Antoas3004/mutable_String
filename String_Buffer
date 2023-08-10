@@ -1,0 +1,35 @@
+public class String_Buffer {
+
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer("avaj");
+		// reverse
+		sb.reverse();
+		System.out.println(sb);
+		System.out.println(sb.hashCode());
+		// append
+		sb.append("hello");
+		System.out.println(sb);
+		System.out.println(sb.hashCode());
+		// insert
+		sb.insert(1, "java");
+		System.out.println(sb);
+		System.out.println(sb.hashCode());
+		// reolace
+		sb.replace(1, 5, "");
+		System.out.println(sb);
+		System.out.println(sb.hashCode());
+		// append
+		sb.append("java");
+		System.out.println(sb);
+		System.out.println(sb.hashCode());
+		// delete
+		sb.delete(9, 13);
+		System.out.println(sb);
+		System.out.println(sb.hashCode());
+		//capacity
+		System.out.println(sb.capacity());
+		sb.append("java is object oriented programming language");
+		System.out.println(sb);
+		System.out.println(sb.capacity());
+	}
+}
